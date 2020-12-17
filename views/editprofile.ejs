@@ -1,0 +1,44 @@
+<%- include('partial/navbar') %>
+
+<h2>Edit profile</h2>
+<body style="background-color: rgb(248, 229, 58);"></body>
+<br>
+<form action="/myprofile/:Userid/edit" method="POST">
+    <div class="form-group">
+        <label for="fullname">fullname</label>
+        <br>
+        <input type="text" class="form-control" id="fullname" name="fullname" value="" required>
+    </div>
+    <section class="gender"> <br> Gender:
+        <br>
+        <input type="radio" name="gender" id="male" value="male>
+       <label for=" male">Male</label>
+        <br>
+        <input type="radio" name="gender" id="Female" value="Female">
+        <label for="Female">Female</label>
+        <br>
+    </section>
+    <br>
+    <div class="form-group">
+       
+        <label for="age">age</label>
+        <br>
+        <input type="number" class="form-control" id="age" name="age"
+            value="" required>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="email">email</label>
+        <br>
+        <input type="text" class="form-control" id="email" name="email" value="" required>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="domisili">domisili</label>
+        <br>
+        <input type="text" class="form-control" id="domisili" name="domisili" value="" required>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Update</button>
+    <button type="button" class="btn btn-danger" onclick="history.back()">Cancel</button>
+</form>
