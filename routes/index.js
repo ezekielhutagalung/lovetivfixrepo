@@ -1,7 +1,26 @@
 const router = require('express').Router()
-const home = require('../controller/index')
+const controller = require('../controller/index')
 
-router.get('/', home.home)
+router.get('/', controller.home)
+
+router.get('/myprofile/:UserId', controller.ShowMyProfile)
+
+router.get('/myprofile/:Userid/edit'.controller.EditProfile)
+
+router.post('/myprofile/:Userid/edit'.controller.EditProfile)
+
+router.get('/relationship/:UserId', controller.) 
+
+router.get('/relationship/hubunganserius', controller.) 
+
+router.get('/relationship/temanbicara', controller.) 
+
+router.get('/relationship/temankondangan', controller.)
+
+
+// - hubunganserius
+// -teman bicara
+// -temen kondangan 
 
 
 
