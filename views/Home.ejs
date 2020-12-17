@@ -17,41 +17,52 @@
         <div class="card">
             <h2> Register </h2>
             <br>
-            <form action="tunggu.html" method="POST">
+            <form action="/myprofile" method="POST">
+                Username:<br>
+                <input type="text" name="username" placeholder="username">
+                <br>
+                Password:<br>
+                <input type="password" name="password" placeholder="password">
+                <br>
+                Confirm Password:<br>
+                <input type="password" name="repassword" placeholder="password">
+                <br><br>
+             
+            </form>
 
-                <label for="fullname">Enter your fullname: </label>
+            <label for="fullname">Enter your fullname: </label>
+            <br>
+            <input type="text" id="fullname" name="fullname" required>
+            <br>
+            <section class="gender"> <br> Gender:
                 <br>
-                <input type="text" id="fullname" name="fullname" required>
-                <br>
-                <section class="gender"> <br> Gender:
-                    <br>
-                    <input type="radio" name="gender" id="male" value="male>
+                <input type="radio" name="gender" id="male" value="male>
                    <label for=" male">Male</label>
-                    <br>
-                    <input type="radio" name="gender" id="Female" value="Female">
-                    <label for="Female">Female</label>
-                    <br>
-                </section>
-                <form>
-                    <label for="age">Enter your age:</label>
-                    <br>
-                    <input type="age" id="age" name="age" required>
-                </form>
+                <br>
+                <input type="radio" name="gender" id="Female" value="Female">
+                <label for="Female">Female</label>
+                <br>
+            </section>
+            <form>
+                <label for="age">Enter your age:</label>
+                <br>
+                <input type="age" id="age" name="age" required>
+            </form>
 
-                <form>
-                    <label for="email">Enter your email:</label>
-                    <br>
-                    <input type="email" id="email" name="email" required>
-                </form>
-                <form>
-                    <label for="domisili">Enter your domisili:</label>
-                    <br>
-                    <input type="domisili" id="domisili" name="domisili" required>
-                </form>
-                  <br>
-                <a href="tunggu.html"><input type="submit" value="Sign Up & log in"></a>
+            <form>
+                <label for="email">Enter your email:</label>
+                <br>
+                <input type="email" id="email" name="email" required>
+            </form>
+            <form>
+                <label for="domisili">Enter your domisili:</label>
+                <br>
+                <input type="domisili" id="domisili" name="domisili" required>
+            </form>
+            <br>
+            <a href="/myprofile"><input type="submit" value="Sign Up & log in"></a>
 
 
-                </body>
+            </body>
 
 </html>
